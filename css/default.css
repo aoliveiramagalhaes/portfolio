@@ -15,7 +15,6 @@ html {
   --secondaryText: #3d5a80;
   --lightText: #f2e9e4;
   --mediumText: #a26c6a;
-  --ForegroundColor: #DAE0EC;
 }
 
 #header {
@@ -188,9 +187,8 @@ footer p {
 }
 
 .footer-text a:hover {
-  text-decoration: none;
-  color: var(--ForegroundColor);
-  font-weight: bold;
+  text-decoration: underline;
+  color: var(--lightText);
 }
 
 .footer-text a {
@@ -207,10 +205,6 @@ footer p {
 .back-to-top li {
   display: inline-block;
   align-items: center;
-}
-
-.back-to-top:hover {
-  text-decoration: none;
 }
 
 .back-to-top:hover {
@@ -306,7 +300,6 @@ footer p {
 
   .project-wrapper-image {
     width: 80%;
-    /* margin-top: 2rem; */
   }
 
   .project-wrapper-text,
@@ -357,7 +350,6 @@ footer p {
 
   .project-wrapper-image {
     width: 80%;
-    margin-top: 2rem;
   }
 
   .project-wrapper-text,
