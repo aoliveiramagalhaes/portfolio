@@ -1,9 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  color: var(--main-Text);
-  font-family: 'Poppins', sans-serif !important;
-  text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 html {
@@ -11,19 +9,47 @@ html {
 }
 
 :root {
-  --mainText: black;
-  --secondaryText: #3d5a80;
-  --lightText: #f2e9e4;
-  --mediumText: #a26c6a;
+  --mainTextLight: black;
+  --secondaryTextLight: #3d5a80;
+  --lightTextLight: #f2e9e4;
+  --mediumTextLight: #a26c6a;
+  --footerTextLight: #454357;
+
+  --textWhite: white;
+
+  --mainTextDark: #639cd9;
+  --secondaryTextDark: #5454c5;
+
 }
 
 #header {
   display: flex;
-  background-color: var(--lightText);
+  background-color: var(--lightTextLight);
   height: 40rem;
   align-items: center;
   padding: 0;
   margin: 0;
+}
+
+.btn-group {
+  position:absolute; 
+  top:0; 
+  right:0;
+  margin-right: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.btn-light {
+  color: var(--mainTextLight);
+  background-color: var(--textWhite);
+  border-color: var(--lightTextLight);
+}
+
+.btn-dark {
+  position: absolute;
+  color: var(--lightTextLight);
+  background-color: var(--mainTextLight);
+  border-color: var(--mainTextLight);
 }
 
 .jumbotron h1 {
@@ -33,14 +59,13 @@ html {
 
 .jumbotron h1 span {
   font-weight: bold;
-  color: var(--secondaryText);
+  color: var(--secondaryTextLight);
 }
 
 #about h2,
-#contact h2,
-#projects h2 {
+#contact h2 {
   text-align: center;
-  color: white;
+  color: var(--textWhite);
   text-transform: uppercase;
   font-weight: 700;
   padding-bottom: 2rem;
@@ -49,8 +74,8 @@ html {
 
 #about,
 #contact {
-  background-color: var(--secondaryText);
-  color: white;
+  background-color: var(--secondaryTextLight);
+  color: var(--textWhite);
   font-size: 1rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -58,9 +83,9 @@ html {
 
 .btn-about,
 .btn-contact {
-  color: white;
-  background-color: var(--mainText);
-  border-color: #f8f9fa;
+  color: var(--textWhite);
+  background-color: var(--mainTextLight);
+  border-color: var(--secondaryTextLight);
   font-weight: 500;
 }
 
@@ -74,16 +99,16 @@ html {
 .btn-contact:active,
 .btn-contact.active,
 .open>.dropdown-toggle.btn-contact {
-  color: white;
-  background-color: #a26c6a;
-  border-color: white;
+  color: var(--textWhite);
+  background-color: var(--mediumTextLight);
+  border-color: var(--mediumTextLight);
 }
 
 .btn-project,
 .btn-outline-header {
-  color: white;
-  background-color: var(--secondaryText);
-  border-color: #f8f9fa;
+  color: var(--textWhite);
+  background-color: var(--secondaryTextLight);
+  border-color: var(--secondaryTextLight);
   font-weight: 500;
 }
 
@@ -97,9 +122,9 @@ html {
 .btn-outline-header:active,
 .btn-outline-header.active,
 .open>.dropdown-toggle.btn-outline-header {
-  color: white;
-  background-color: var(--mainText);
-  border-color: white;
+  color: var(--textWhite);
+  background-color: var(--mainTextLight);
+  border-color: var(--mainTextLight);
 }
 
 .profile-image,
@@ -128,24 +153,24 @@ html {
 }
 
 #projects {
-  background-color: white;
-  color: black;
+  background-color: var(--textWhite);
+  color: var(--mainTextLight);
   font-size: 1rem;
   padding-top: 2rem;
 }
 
 #projects h2 {
   text-align: center;
-  color: var(--secondaryText);
+  color: var(--secondaryTextLight);
   text-transform: uppercase;
   font-weight: 700;
   padding-bottom: 2rem;
-  padding-top: 2rem;
+  font-size: 2.5rem;
 }
 
 #projects h3 {
   text-align: left;
-  color: var(--secondaryText);
+  color: var(--secondaryTextLight);
   font-weight: 700;
   padding-bottom: 1rem;
 }
@@ -160,7 +185,7 @@ html {
 }
 
 #projects .project-wrapper .row {
-  margin-bottom: 8rem;
+  padding-bottom: 5rem;
   margin-left: 0;
   align-items: center;
   justify-content: center;
@@ -176,8 +201,9 @@ html {
 }
 
 footer {
-  background-color: #454357;
+  background-color: var(--footerTextLight);
   padding: 3rem 0;
+  color: var(--lightTextLight);
 }
 
 footer p {
@@ -188,15 +214,15 @@ footer p {
 
 .footer-text a:hover {
   text-decoration: underline;
-  color: var(--lightText);
+  color: var(--lightTextLight);
 }
 
 .footer-text a {
-  color: var(--lightText);
+  color: var(--lightTextLight);
 }
 
 .back-to-top i {
-  color: var(--lightText);
+  color: var(--lightTextLight);
   margin: 1rem 0;
   display: grid;
   place-items: center;
@@ -217,7 +243,7 @@ footer p {
 }
 
 .social-links i {
-  color: var(--lightText);
+  color: var(--lightTextLight);
 }
 
 .social-links li {
@@ -263,7 +289,7 @@ footer p {
 }
 
 #projects .project-wrapper .row {
-  margin-bottom: 3rem;
+  margin-bottom: 0rem;
   margin-left: 0;
   align-items: center;
 }
@@ -368,5 +394,91 @@ footer p {
     text-align: center;
     margin: auto;
     width: 90%;
+  }
+}
+
+
+@media only screen and (max-width: 720px) {
+  .jumbotron h1 {
+    font-size: 3rem;
+  }
+
+  .about-wrapper-info {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  #about h2,
+  #contact h2,
+  #projects h2 {
+    font-size: 2rem;
+    padding-top: 0;
+  }
+
+  .project-wrapper-image {
+    width: 80%;
+  }
+
+  .project-wrapper-text,
+  #projects h3 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .contact-wrapper-text {
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    padding-bottom: 1rem;
+  }
+
+  .profile-image {
+    width: 50%;
+  }
+
+  .footer p {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #header {
+    background-color: black;
+  }
+  body {
+    color: var(--textWhite);
+  }
+  footer,
+  #about,
+  #contact,
+  #projects {
+    background-color: var(--mainTextLight);
+    color: var(--textWhite);
+  }
+
+  .jumbotron h1 span {
+    color: var(--mainTextDark);
+  }
+
+  #about h2,
+  #contact h2,
+  #projects h2
+  #about h3,
+  #contact h3,
+  #projects h3{
+    color: var(--mainTextDark);
+  }
+
+  #about h2,
+  #contact h2,
+  #projects h2{
+    color: var(--mainTextDark);
   }
 }
