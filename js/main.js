@@ -1,6 +1,12 @@
 // add events after loading the page
 window.addEventListener('load', () => {
 
+  // window.scroll({
+  //   top: 0,
+  //   left: 0,
+  //   behavior: 'smooth'
+  // });
+
   // set theme to light when clicking on the light button
   document.getElementById("switch-light").addEventListener('click', () => {
     document.body.setAttribute('data-theme', 'light')

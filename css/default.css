@@ -459,6 +459,8 @@ footer p {
 }
 
 
+
+
 /* .visible-dark {
   display: none;
 }
@@ -497,4 +499,69 @@ footer p {
 [data-theme="dark"] #contact h2,
 [data-theme="dark"] #projects h2 {
   color: var(--mainTextDark);
+}
+
+[data-theme="dark"] .btn-project,
+[data-theme="dark"] .btn-outline-header,
+[data-theme="dark"] .btn-about,
+[data-theme="dark"] .btn-contact {
+  color: var(--textWhite);
+  background-color: var(--mainTextDark);
+  border-color: var(--secondaryTextLight);
+  font-weight: 500;
+}
+
+[data-theme="dark"] .btn-project:hover,
+[data-theme="dark"] .btn-project:focus,
+[data-theme="dark"] .btn-project:active,
+[data-theme="dark"] .btn-project.active,
+[data-theme="dark"] .open>.dropdown-toggle.btn-project,
+[data-theme="dark"] .btn-outline-header:hover,
+[data-theme="dark"] .btn-outline-header:focus,
+[data-theme="dark"] .btn-outline-header:active,
+[data-theme="dark"] .btn-outline-header.active,
+[data-theme="dark"] .open>.dropdown-toggle.btn-outline-header {
+  color: var(--textWhite);
+  background-color: var(--secondaryTextDark);
+  border-color: var(--mainTextLight);
+}
+
+[data-theme="dark"] .btn-about:hover,
+[data-theme="dark"] .btn-about:focus,
+[data-theme="dark"] .btn-about:active,
+[data-theme="dark"] .btn-about.active,
+[data-theme="dark"] .open>.dropdown-toggle.btn-about,
+[data-theme="dark"] .btn-contact:hover,
+[data-theme="dark"] .btn-contact:focus,
+[data-theme="dark"] .btn-contact:active,
+[data-theme="dark"] .btn-contact.active,
+[data-theme="dark"] .open>.dropdown-toggle.btn-contact {
+  color: var(--textWhite);
+  background-color: var(--secondaryTextDark);
+  border-color: var(--mediumTextLight);
+}
+
+[data-theme="dark"] .profile-image,
+[data-theme="dark"] .project1-image,
+[data-theme="dark"] .project2-image,
+[data-theme="dark"] .project3-image {
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  filter: grayscale(0%);
+  transition: all 0.75s ease;
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.44);
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.44);
+}
+
+.profile-image:hover,
+.project1-image:hover,
+.project2-image:hover,
+.project3-image:hover {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  filter: grayscale(0%);
 }
