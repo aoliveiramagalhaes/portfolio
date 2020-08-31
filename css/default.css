@@ -29,6 +29,7 @@ html {
   align-items: center;
   padding: 0;
   margin: 0;
+  text-align: left;
 }
 
 .btn-group {
@@ -55,6 +56,7 @@ html {
 .jumbotron h1 {
   font-size: 5rem;
   margin-bottom: 2rem;
+  color: var(--mainTextLight);
 }
 
 .jumbotron h1 span {
@@ -456,15 +458,15 @@ footer p {
   color: var(--textWhite);
 }
 
-/* 
-.visible-dark {
+
+/* .visible-dark {
   display: none;
 }
 
 [data-theme="dark"] .visible-dark {
   display: block;
-} 
-*/
+}  */
+
 
 [data-theme="dark"] footer,
 [data-theme="dark"] #about,
