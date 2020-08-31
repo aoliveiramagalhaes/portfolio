@@ -12,7 +12,7 @@ You can find more details about my experience and skills in my [portolio](https:
 
 I've created a responsive website in light and dark mode and generated a Lighthouse report to ensure it meets the performance, accessibility, and user experience high standards.
 
-Here are the languages and frameworks I used to build my portfolio. I hope you like it! 
+Here are the languages and frameworks I used to build my portfolio. I hope you like it :wink:
 
 #### Languages
  * HTML
