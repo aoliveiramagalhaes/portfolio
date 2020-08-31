@@ -32,9 +32,9 @@ html {
 }
 
 .btn-group {
-  position:absolute; 
-  top:0; 
-  right:0;
+  position: absolute;
+  top: 0;
+  right: 0;
   margin-right: 1.5rem;
   margin-top: 1.5rem;
 }
@@ -448,37 +448,51 @@ footer p {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  #header {
-    background-color: black;
-  }
-  body {
-    color: var(--textWhite);
-  }
-  footer,
-  #about,
-  #contact,
-  #projects {
-    background-color: var(--mainTextLight);
-    color: var(--textWhite);
-  }
+[data-theme="dark"] #header {
+  background-color: black;
+}
 
-  .jumbotron h1 span {
-    color: var(--mainTextDark);
-  }
+[data-theme="dark"] body {
+  color: var(--textWhite);
+}
 
-  #about h2,
-  #contact h2,
-  #projects h2
-  #about h3,
-  #contact h3,
-  #projects h3{
-    color: var(--mainTextDark);
-  }
+/* 
+.visible-dark {
+  display: none;
+}
 
-  #about h2,
-  #contact h2,
-  #projects h2{
-    color: var(--mainTextDark);
-  }
+[data-theme="dark"] .visible-dark {
+  display: block;
+} 
+*/
+
+[data-theme="dark"] footer,
+[data-theme="dark"] #about,
+[data-theme="dark"] #contact,
+[data-theme="dark"] #projects {
+  background-color: var(--mainTextLight);
+  color: var(--textWhite);
+}
+
+[data-theme="dark"] .jumbotron h1 {
+  color: var(--textWhite);
+}
+
+[data-theme="dark"] .jumbotron h1 span {
+  color: var(--mainTextDark);
+}
+
+[data-theme="dark"] #about h2,
+[data-theme="dark"] #contact h2,
+[data-theme="dark"] #projects h2,
+[data-theme="dark"] #about h3,
+[data-theme="dark"] #contact h3,
+[data-theme="dark"] #projects h3 {
+  color: var(--mainTextDark);
+}
+
+[data-theme="dark"] #about h2,
+[data-theme="dark"] #contact h2,
+[data-theme="dark"] #projects h2 {
+  color: var(--mainTextDark);
 }
