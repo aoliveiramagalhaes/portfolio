@@ -560,7 +560,7 @@ footer p {
 [data-theme="dark"] .open>.dropdown-toggle.btn-contact {
   color: var(--textWhite);
   background-color: var(--secondaryTextDark);
-  border-color: var(--mediumTextLight);
+  border-color: var(--secondaryTextDark);
 }
 
 [data-theme="dark"] .profile-image,
