@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build": "node-sass --output-style compressed --recursive -o css scss"
+    "build": "node-sass --output-style compressed scss/default.scss css/default.css",
+    "watch": "node-sass --output-style compressed --watch scss/default.scss css/default.css"
   },
   "dependencies": {
     "node-sass": "^4.14.1"
