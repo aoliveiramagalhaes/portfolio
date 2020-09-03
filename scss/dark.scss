@@ -3,6 +3,7 @@
   --secondaryTextDark:#5454c5;
 }
 
+
 [data-theme="dark"] {
   .btn-light {
     opacity: 0.5;
@@ -58,7 +59,7 @@
   }
 
   .btn-project {
-    &:hover, &:focus, &:active, &.active {
+    &:hover, &:focus, &:active {
       color: var(--textWhite);
       background-color: var(--secondaryTextDark);
       border-color: var(--mainTextLight);
@@ -72,7 +73,7 @@
   }
 
   .btn-outline-header {
-    &:hover, &:focus, &:active, &.active {
+    &:hover, &:focus, &:active {
       color: var(--textWhite);
       background-color: var(--secondaryTextDark);
       border-color: var(--mainTextLight);
@@ -86,7 +87,7 @@
   }
 
   .btn-about {
-    &:hover, &:focus, &:active, &.active {
+    &:hover, &:focus, &:active {
       color: var(--textWhite);
       background-color: var(--secondaryTextDark);
       border-color: var(--secondaryTextDark);
@@ -100,7 +101,7 @@
   }
 
   .btn-contact {
-    &:hover, &:focus, &:active, &.active {
+    &:hover, &:focus, &:active {
       color: var(--textWhite);
       background-color: var(--secondaryTextDark);
       border-color: var(--secondaryTextDark);
