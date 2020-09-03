@@ -59,33 +59,50 @@ html {
 }
 
 .slider {
-  background-color: #ccc;
-  bottom: 0;
-  cursor: pointer;
-  left: 0;
   position: absolute;
-  right: 0;
+  cursor: pointer;
   top: 0;
-  transition: .4s;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
-  background-color: #fff;
-  bottom: 4px;
-  content: "";
-  height: 26px;
-  left: 4px;
   position: absolute;
-  transition: .4s;
-  width: 26px;
+  content: "";
+  height: 40px;
+  width: 40px;
+  left: 0px;
+  bottom: 4px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  box-shadow: 0 0px 15px #2020203d;
+  background: white url('../images/sunny.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 input:checked + .slider {
-  background-color: var(--secondaryTextDark);
+  background-color: var(--mainTextDark);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--mainTextDark);
 }
 
 input:checked + .slider:before {
-  transform: translateX(26px);
+  -webkit-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(24px);
+  background: white url('../images/night.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .slider.round {
@@ -95,50 +112,6 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-
-
-/* 
-.btn-group {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-right: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-.btn-light {
-  color: var(--mainTextLight);
-  background-color: var(--textWhite);
-  border-color: var(--lightTextLight);
-} */
-
-/* [data-theme="light"] .btn-light {
-  
-} */
-/* 
-[data-theme="light"] .btn-dark {
-  opacity: 0.5;
-  font-weight: 700;
-  -webkit-box-shadow: 10px 7px 5px -4px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 7px 5px -4px rgba(0,0,0,0.75);
-  box-shadow: 10px 7px 5px -4px rgba(0,0,0,0.75);
-}
-
-[data-theme="dark"] .btn-light {
-  opacity: 0.5;
-  opacity: 0.5;
-  font-weight: 700;
-  -webkit-box-shadow: -6px 5px 5px -3px rgba(255,255,255,1);
-  -moz-box-shadow: -6px 5px 5px -3px rgba(255,255,255,1);
-  box-shadow: -6px 5px 5px -3px rgba(255,255,255,1);
-}
-
-.btn-dark {
-  position: absolute;
-  color: var(--lightTextLight);
-  background-color: var(--mainTextLight);
-  border-color: var(--mainTextLight);
-} */
 
 .jumbotron h1 {
   font-size: 5rem;
@@ -544,17 +517,6 @@ footer p {
 [data-theme="dark"] body {
   color: var(--textWhite);
 }
-
-
-
-
-/* .visible-dark {
-  display: none;
-}
-
-[data-theme="dark"] .visible-dark {
-  display: block;
-}  */
 
 
 [data-theme="dark"] footer,
