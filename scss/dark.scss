@@ -1,3 +1,16 @@
+:root {
+  --mainTextDark:#639cd9;
+  --secondaryTextDark:#5454c5;
+}
+
+.btn-dark {
+  opacity: 0.5;
+  position: absolute;
+  color: var(--lightTextLight);
+  background-color: var(--mainTextLight);
+  border-color: var(--mainTextLight);
+}
+
 [data-theme="dark"] {
   .btn-light {
     opacity: 0.5;
@@ -9,4 +22,111 @@
     -moz-box-shadow: 0px 0px 12px -1px rgba(247, 239, 247, 1);
     box-shadow: 0px 0px 12px -1px rgba(247, 239, 247, 1);
   }
+
+  #header {
+    background-color: black;
+  }
+
+  body {
+    color: var(--textWhite);
+  }
+
+  footer, #about, #contact, #projects {
+    background-color: var(--mainTextLight);
+    color: var(--textWhite);
+  }
+
+  .jumbotron h1 {
+    color: var(--textWhite);
+
+    span {
+      color: var(--mainTextDark);
+    }
+  }
+
+  #about h2, #contact h2, #projects h2, #about h3, #contact h3, #projects h3, #about h2, #contact h2, #projects h2 {
+    color: var(--mainTextDark);
+  }
+
+  .btn-project, .btn-outline-header, .btn-about, .btn-contact {
+    color: var(--textWhite);
+    background-color: var(--mainTextDark);
+    border-color: var(--secondaryTextLight);
+    font-weight: 500;
+  }
+
+  .btn-project {
+    &:hover, &:focus, &:active {
+      color: var(--textWhite);
+      background-color: var(--secondaryTextDark);
+      border-color: var(--mainTextLight);
+    }
+  }
+
+  .open > .dropdown-toggle.btn-project {
+    color: var(--textWhite);
+    background-color: var(--secondaryTextDark);
+    border-color: var(--mainTextLight);
+  }
+
+  .btn-outline-header {
+    &:hover, &:focus, &:active {
+      color: var(--textWhite);
+      background-color: var(--secondaryTextDark);
+      border-color: var(--mainTextLight);
+    }
+  }
+
+  .open > .dropdown-toggle.btn-outline-header {
+    color: var(--textWhite);
+    background-color: var(--secondaryTextDark);
+    border-color: var(--mainTextLight);
+  }
+
+  .btn-about {
+    &:hover, &:focus, &:active {
+      color: var(--textWhite);
+      background-color: var(--secondaryTextDark);
+      border-color: var(--secondaryTextDark);
+    }
+  }
+
+  .open > .dropdown-toggle.btn-about {
+    color: var(--textWhite);
+    background-color: var(--secondaryTextDark);
+    border-color: var(--secondaryTextDark);
+  }
+
+  .btn-contact {
+    &:hover, &:focus, &:active {
+      color: var(--textWhite);
+      background-color: var(--secondaryTextDark);
+      border-color: var(--secondaryTextDark);
+    }
+  }
+
+  .open > .dropdown-toggle.btn-contact {
+    color: var(--textWhite);
+    background-color: var(--secondaryTextDark);
+    border-color: var(--secondaryTextDark);
+  }
+
+  .profile-image, .project1-image, .project2-image, .project3-image {
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
+    transition: all 0.75s ease;
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.44);
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.44);
+  }
+}
+
+.profile-image:hover, .project1-image:hover, .project2-image:hover, .project3-image:hover {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  filter: grayscale(0%);
 }

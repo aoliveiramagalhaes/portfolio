@@ -1,5 +1,6 @@
 @import "./light.scss";
 @import "./dark.scss";
+@import "./media-queries";
 
 .theme-switch-wrapper {
   display: flex;
@@ -76,3 +77,4 @@ input:checked+.slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
