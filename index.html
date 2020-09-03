@@ -31,9 +31,12 @@
 
 <body data-theme="light">
   <div class="jumbotron jumbotron-fluid" id="header">
-    <div class="btn-group" role="group" aria-label="light-dark mode">
-      <button type="button" class="btn btn-light" id="switch-light">Light</button>
-      <button type="button" class="btn btn-dark" id="switch-dark">Dark</button>
+
+    <div class="theme-switch-wrapper">
+      <label class="theme-switch" for="checkbox" title="Switch theme mode">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+      </label>
     </div>
 
     <div class="container">
@@ -41,8 +44,8 @@
         I'm a front end developer
       </h1>
       <a class="btn btn-outline-header" href="#about" role="button">Know More</a>
-
     </div>
+
   </div>
 
   <section id="about">
