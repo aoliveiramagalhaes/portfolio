@@ -14,12 +14,7 @@ html {
   --lightTextLight: #f2e9e4;
   --mediumTextLight: #a26c6a;
   --footerTextLight: #454357;
-
   --textWhite: white;
-
-  --mainTextDark: #639cd9;
-  --secondaryTextDark: #5454c5;
-
 }
 
 #header {
@@ -40,42 +35,29 @@ html {
   margin-top: 1.5rem;
 }
 
-
-.btn-light {
-  color: var(--mainTextLight);
-  background-color: var(--textWhite);
-  border-color: var(--lightTextLight);
-}
-
 [data-theme="light"] {
   .btn-light {
+    color: var(--mainTextLight);
+    background-color: var(--textWhite);
+    border-color: var(--lightTextLight);
     font-weight: 700;
     -webkit-box-shadow: 0px 3px 12px -4px rgba(0, 0, 0, 1);
     -moz-box-shadow: 0px 3px 12px -4px rgba(0, 0, 0, 1);
     box-shadow: 0px 3px 12px -4px rgba(0, 0, 0, 1);
   }
+}
 
-  .btn-dark {
-    opacity: 0.5;
+.jumbotron {
+  h1 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    color: var(--mainTextLight);
+
+    span {
+      font-weight: bold;
+      color: var(--secondaryTextLight);
+    }
   }
-}
-
-.btn-dark {
-  position: absolute;
-  color: var(--lightTextLight);
-  background-color: var(--mainTextLight);
-  border-color: var(--mainTextLight);
-}
-
-.jumbotron h1 {
-  font-size: 5rem;
-  margin-bottom: 2rem;
-  color: var(--mainTextLight);
-}
-
-.jumbotron h1 span {
-  font-weight: bold;
-  color: var(--secondaryTextLight);
 }
 
 #about h2,
@@ -289,293 +271,4 @@ footer p {
 
 .social-links .ul {
   text-decoration: none;
-}
-
-
-@media only screen and (max-width: 1048px) {
-  .project-wrapper-image {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-.profile-image {
-  width: 50%;
-}
-
-#projects .project-wrapper .row {
-  margin-bottom: 0rem;
-  margin-left: 0;
-  align-items: center;
-}
-
-.about-wrapper-info {
-  width: 80%;
-}
-
-.project-wrapper-image {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media only screen and (max-width: 420px) {
-  .jumbotron h1 {
-    font-size: 3rem;
-  }
-
-  .about-wrapper-info {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding-top: 1rem;
-  }
-
-  #about h2,
-  #contact h2,
-  #projects h2 {
-    font-size: 2rem;
-    padding-top: 0;
-  }
-
-  .project-wrapper-image {
-    width: 80%;
-  }
-
-  .project-wrapper-text,
-  #projects h3 {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  .contact-wrapper-text {
-    text-align: center;
-    margin: auto;
-    width: 90%;
-    padding-bottom: 1rem;
-  }
-
-  .profile-image {
-    width: 50%;
-  }
-
-  .footer p {
-    text-align: center;
-    margin: auto;
-    width: 80%;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .jumbotron h1 {
-    font-size: 3rem;
-  }
-
-  .about-wrapper-info {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding-top: 1rem;
-  }
-
-  #about h2,
-  #contact h2,
-  #projects h2 {
-    font-size: 2rem;
-    padding-top: 0;
-  }
-
-  .project-wrapper-image {
-    width: 80%;
-  }
-
-  .project-wrapper-text,
-  #projects h3 {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  .profile-image {
-    width: 50%;
-  }
-
-  .footer p {
-    text-align: center;
-    margin: auto;
-    width: 90%;
-  }
-}
-
-
-@media only screen and (max-width: 720px) {
-  .jumbotron h1 {
-    font-size: 3rem;
-  }
-
-  .about-wrapper-info {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding-top: 1rem;
-  }
-
-  #about h2,
-  #contact h2,
-  #projects h2 {
-    font-size: 2rem;
-    padding-top: 0;
-  }
-
-  .project-wrapper-image {
-    width: 80%;
-  }
-
-  .project-wrapper-text,
-  #projects h3 {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  .contact-wrapper-text {
-    text-align: center;
-    margin: auto;
-    width: 90%;
-    padding-bottom: 1rem;
-  }
-
-  .profile-image {
-    width: 50%;
-  }
-
-  .footer p {
-    text-align: center;
-    margin: auto;
-    width: 80%;
-  }
-}
-
-[data-theme="dark"] #header {
-  background-color: black;
-}
-
-[data-theme="dark"] body {
-  color: var(--textWhite);
-}
-
-
-
-
-/* .visible-dark {
-  display: none;
-}
-
-[data-theme="dark"] .visible-dark {
-  display: block;
-}  */
-
-
-[data-theme="dark"] footer,
-[data-theme="dark"] #about,
-[data-theme="dark"] #contact,
-[data-theme="dark"] #projects {
-  background-color: var(--mainTextLight);
-  color: var(--textWhite);
-}
-
-[data-theme="dark"] .jumbotron h1 {
-  color: var(--textWhite);
-}
-
-[data-theme="dark"] .jumbotron h1 span {
-  color: var(--mainTextDark);
-}
-
-[data-theme="dark"] #about h2,
-[data-theme="dark"] #contact h2,
-[data-theme="dark"] #projects h2,
-[data-theme="dark"] #about h3,
-[data-theme="dark"] #contact h3,
-[data-theme="dark"] #projects h3 {
-  color: var(--mainTextDark);
-}
-
-[data-theme="dark"] #about h2,
-[data-theme="dark"] #contact h2,
-[data-theme="dark"] #projects h2 {
-  color: var(--mainTextDark);
-}
-
-[data-theme="dark"] .btn-project,
-[data-theme="dark"] .btn-outline-header,
-[data-theme="dark"] .btn-about,
-[data-theme="dark"] .btn-contact {
-  color: var(--textWhite);
-  background-color: var(--mainTextDark);
-  border-color: var(--secondaryTextLight);
-  font-weight: 500;
-}
-
-[data-theme="dark"] .btn-project:hover,
-[data-theme="dark"] .btn-project:focus,
-[data-theme="dark"] .btn-project:active,
-[data-theme="dark"] .btn-project.active,
-[data-theme="dark"] .open>.dropdown-toggle.btn-project,
-[data-theme="dark"] .btn-outline-header:hover,
-[data-theme="dark"] .btn-outline-header:focus,
-[data-theme="dark"] .btn-outline-header:active,
-[data-theme="dark"] .btn-outline-header.active,
-[data-theme="dark"] .open>.dropdown-toggle.btn-outline-header {
-  color: var(--textWhite);
-  background-color: var(--secondaryTextDark);
-  border-color: var(--mainTextLight);
-}
-
-[data-theme="dark"] .btn-about:hover,
-[data-theme="dark"] .btn-about:focus,
-[data-theme="dark"] .btn-about:active,
-[data-theme="dark"] .btn-about.active,
-[data-theme="dark"] .open>.dropdown-toggle.btn-about,
-[data-theme="dark"] .btn-contact:hover,
-[data-theme="dark"] .btn-contact:focus,
-[data-theme="dark"] .btn-contact:active,
-[data-theme="dark"] .btn-contact.active,
-[data-theme="dark"] .open>.dropdown-toggle.btn-contact {
-  color: var(--textWhite);
-  background-color: var(--secondaryTextDark);
-  border-color: var(--secondaryTextDark);
-}
-
-[data-theme="dark"] .profile-image,
-[data-theme="dark"] .project1-image,
-[data-theme="dark"] .project2-image,
-[data-theme="dark"] .project3-image {
-  display: block;
-  margin: auto;
-  border-radius: 5px;
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  filter: grayscale(0%);
-  transition: all 0.75s ease;
-  -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.44);
-  -moz-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.44);
-  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.44);
-}
-
-.profile-image:hover,
-.project1-image:hover,
-.project2-image:hover,
-.project3-image:hover {
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  filter: grayscale(0%);
 }
