@@ -21,3 +21,13 @@ Here are the languages and frameworks I used to build my portfolio. I hope you l
 
  #### CSS framework
  * Bootstrap 4.5
+
+ #### Settings
+
+ Add Sass for DRYing some CSS code.
+
+To compile from scss to css
+`yarn build`
+
+To compile continuously --watch:
+`yarn watch`
