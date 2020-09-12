@@ -27,15 +27,6 @@ html {
   text-align: left;
 }
 
-.btn-group {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-right: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
@@ -45,6 +36,14 @@ html {
   margin-right: 1.5rem;
   margin-top: 1.5rem;
 }
+
+.info-sign {
+  margin-left: 10px;
+  font-size: 1rem;
+  top: 0;
+  right: 0;
+}
+
 
 .theme-switch {
   display: inline-block;
