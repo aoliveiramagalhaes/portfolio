@@ -129,11 +129,24 @@ input:checked+.slider:before {
     margin-bottom: 2rem;
     color: var(--mainTextLight);
 
-    span {
+    .text-header {
       font-weight: bold;
       color: var(--secondaryTextLight);
     }
   }
+}
+
+.jumbotron {
+  .second-text-header {
+    color: black;
+    font-size: 3rem;
+  }
+}
+
+.about-span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--lightTextLight)
 }
 
 #about h2,
