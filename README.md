@@ -1,7 +1,7 @@
 
 ### :wave: Hi there!
 
-My name is Aline, and I'm a professional with extensive experience in product and project management, leading cross-functional teams to plan, build, launch and manage top-performing solutions. Great experience with Agile/Scrum methodologies, marketing orientation, and analytical abilities to evolve product strategy that maximizes organization growth
+My name is Aline, and I'm a professional with extensive experience in product and project management, leading cross-functional teams to plan, build, launch and manage top-performing solutions. Wide experience with Agile/Scrum methodologies, marketing orientation, and analytical abilities to evolve product strategy that maximizes organization growth
 
 I've recently started to take a full-stack web development course at Codecademy and General Assembly, and I am loving it :heart_eyes: 
 more specifically, front end development. I'm very detail-oriented and problem-solver; skills which I acquired after working in Quality Assurance for so many years.
