@@ -8,7 +8,7 @@ more specifically, front end development. I'm very detail-oriented and problem-s
 
 I'm excited about software development, mostly because of its ability to deliver products and value right from my laptop.
 
-You can find more details about my experience and skills in my [portolio](https://aoliveiramagalhaes.github.io/portifolio).
+You can find more details about my experience and skills in my [portifolio](https://aoliveiramagalhaes.github.io/portfolio).
 
 I've created a responsive website in light and dark mode and generated a Lighthouse report to ensure it meets the performance, accessibility, and user experience high standards.
 
