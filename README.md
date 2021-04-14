@@ -1,9 +1,9 @@
 
 ### :wave: Hi there!
 
-My name is Aline, and I'm a professional with extensive experience in product and project management, leading cross-functional teams to plan, build, launch and manage top-performing solutions. I'm a **Certified Scrum Product Owner** with in-depth knowledge of Agile ceremonies, prioritization, metrics, marketing orientation, and analytical abilities to evolve product strategy that maximizes organization growth.
+My name is Aline, and I'm a professional with extensive experience in Product and Project Management.
 
-I've recently started to take a full-stack web development course at Codecademy and General Assembly, and I am loving it :heart_eyes:  more specifically, front end development. I'm very detail-oriented and problem-solver; skills which I acquired after working in Quality Assurance for so many years.
+I've recently started to take a full-stack web development course at Codecademy, and I am loving it :heart_eyes:  more specifically, front end development. I'm very detail-oriented and problem-solver; skills which I acquired after working in Project Management for so many years.
 
 You can find more details about my experience and skills in my [portfolio](https://aoliveiramagalhaes.github.io/portfolio).
 
